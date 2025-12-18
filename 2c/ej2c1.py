@@ -53,9 +53,9 @@ def convert_to_integer(string):
   try:
      return int(string) #cadena que convertim a un name enter.
   except Value Error:
-    return("The string cannot be converted to an integer") #mostrar error perq cadena no ha pogt ser retornada com a enter.
+    return "The string cannot be converted to an integer" #mostrar error perq cadena no ha pogt ser retornada com a enter.
   except Exception as error:
-    return("An unexpected error has occurred: {error}") #mostrar altres errors.
+    return f"An unexpected error has occurred: {error}" #mostrar altres errors.
 
     
 
