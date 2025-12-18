@@ -49,20 +49,27 @@ Exemple:
      En tots tres casos el resultat és 882, que és la suma de 10, 44, 188 i 640.
 """
 
-
+#list_numbers es la lista ya creada en la def
 def sum_even_numbers_in_list_while(list_numbers):
-    # Write here your code
-    pass
-
-
+    sum_num=0 #Crear una lsita vacía que sume
+    i=0 #Inicializar un índice i
+        while i<len(list_numbers[i]):
+            if list_numbers[i]%2==0:
+                sum_num+=list_numbers[i]
+            i+=1
+    return sum_num            
+    
+ 
 def sum_even_numbers_in_list_for(list_numbers):
-    # Write here your code
-    pass
+    sum_num=0
+    for num in list_numbers:
+        if num%2 == 0:
+            sum_num+=num
+    return sum_num
 
 
 def sum_even_numbers_in_list_do_while(list_numbers):
-    # Write here your code
-    pass
+    
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
