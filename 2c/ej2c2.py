@@ -60,7 +60,7 @@ def get_element_from_list(items_list, index) -> str:
     except IndexError:
         return "The specified index is out of the list's range"
     except Exception as error:
-        return "An unexpected error has passat: {error}"
+        return f"An unexpected error has passat: {error}"
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
