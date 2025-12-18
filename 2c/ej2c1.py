@@ -48,10 +48,16 @@ Exemple:
      must be a string, a bytes-like object or a number, not 'list'
 """
 
-
+#te está pidiendo que distingas entre diferentes errores. En Python, la única manera de distinguir errores es con el try except.
 def convert_to_integer(string):
-    # Write here your code
-    pass
+  try:
+     return int(string) #cadena que convertim a un name enter.
+  except Value Error:
+    return("The string cannot be converted to an integer") #mostrar error perq cadena no ha pogt ser retornada com a enter.
+  except Exception as error:
+    return("An unexpected error has occurred: {error}") #mostrar altres errors.
+
+    
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
