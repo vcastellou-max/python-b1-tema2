@@ -49,10 +49,12 @@ Exemple:
 """
 
 
-def sum_list_numbers(
-    list_numbers):
-    # Write here your code
-    pass
+def sum_list_numbers(list_numbers):
+    total=0 #Empezamos inicializando la suma. Por ahora no sumas nada así que es zero
+    for num in list_numbers: #Para cada  numero en la lista de numeros
+        total+=num #Si hay un numero, sumarlo al total
+    return total #Devolver la suma de los numeros al total
+    
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y
