@@ -63,16 +63,14 @@ Sortida:
 120.0
 95.0
 """
-
-
-def tax_calculation_group_1(value: int):
-    # Write here your code
-    pass
-
-
 def tax_calculation_global(value: int):
-    # Write here your code
-    pass
+    return (24 * value)/100
+    
+def tax_calculation_group_1(value: int):
+   return (19 * value)/100
+
+
+    
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
