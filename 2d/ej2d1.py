@@ -49,8 +49,6 @@ Exemple:
 
 
 def kg_to_lb(kg):
-    # Write here your code
-    pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
