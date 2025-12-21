@@ -52,7 +52,7 @@ Exemple:
 def convert_to_integer(string):
   try:
      return int(string) #cadena que convertim a un name enter.
-  except Value Error:
+  except ValueError:
     return "The string cannot be converted to an integer" #mostrar error perq cadena no ha pogt ser retornada com a enter.
   except Exception as error:
     return f"An unexpected error has occurred: {error}" #mostrar altres errors.
@@ -62,6 +62,6 @@ def convert_to_integer(string):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(convert_to_integer("123"))
-# print(convert_to_integer(["3.14"]))
-# print(convert_to_integer("foo"))
+print(convert_to_integer("123"))
+print(convert_to_integer(["3.14"]))
+print(convert_to_integer("foo"))

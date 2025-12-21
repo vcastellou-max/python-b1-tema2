@@ -49,13 +49,13 @@ Exemple:
 
 
 def kg_to_lb(kg):
-    try:
-        if kg <=0:
-            raise ValueError("Number must be greater than 0.")
-        else:
-            lb = kg * 2.20462
-     except TypeError:
-                rasie TypeError("Must be a number.")
+    if not isinstance(kg,(int,float)):
+        raise TypeErrror("Must be a Number.")
+    if kg <=0:
+        raise ValueError("Number must be greater than 0.")
+    else:
+        lb = kg * 2.20462
+    return round(lb,2)
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-#print(kg_to_lb(50))
+print(kg_to_lb(50))
